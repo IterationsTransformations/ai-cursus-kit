@@ -11,7 +11,25 @@ Hulpmiddelen voor hoofdstuk 5 (DeepSeek Harness). Deze map staat in je workspace
 ## Wat je nodig hebt
 
 - Je OpenRouter-sleutel in een tekstbestand `openrouter_key.txt` op je bureaublad. Alleen de sleutel, op één regel.
-- Verder niets. Node.js staat al op je computer, want DeepSeek Harness draait erop.
+- Verder niets. Je hoeft Node.js niet te installeren: staat het niet op je computer, dan gebruikt de agent de Node die in DeepSeek Harness zit.
+
+## Node starten (voor de agent)
+
+Probeer eerst het gewone commando `node`. Bestaat dat niet, gebruik dan de Node uit de app. Die werkt precies zoals `node` als de omgevingsvariabele `ELECTRON_RUN_AS_NODE` op 1 staat.
+
+Windows (PowerShell):
+
+```
+$env:ELECTRON_RUN_AS_NODE='1'; & "$env:LOCALAPPDATA\Programs\DeepSeek Harness\DeepSeek Harness.exe" cursuskit/beelden.mjs --prompt "..." --out pad/naar/beeld.png
+```
+
+Mac (zsh):
+
+```
+ELECTRON_RUN_AS_NODE=1 "/Applications/DeepSeek Harness.app/Contents/MacOS/DeepSeek Harness" cursuskit/beelden.mjs --prompt "..." --out pad/naar/beeld.png
+```
+
+Overal waar hieronder `node` staat, mag je dit commando gebruiken. Getest op Windows; het pad op de Mac is niet getest.
 
 ## De beeldtool gebruiken (voor de agent)
 

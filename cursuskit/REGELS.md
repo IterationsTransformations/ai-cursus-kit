@@ -26,10 +26,11 @@ Lees dit voor je begint. Deze regels gelden altijd, ook als de opdracht ze niet 
 ## 3. Werken in de sandbox
 
 - Werk alleen in de map die de opdracht noemt. Vraag nooit om meer rechten en probeer een blokkade niet te omzeilen. Lukt iets niet, kies een andere weg of sla het over en zeg het.
+- Node: gebruik het commando `node`. Bestaat dat niet op deze computer, gebruik dan de Node die in DeepSeek Harness zit, zoals beschreven in `cursuskit/LEESMIJ.md` onder "Node starten". Vraag de gebruiker niet om Node.js te installeren.
 - Downloaden doe je met Node.js `fetch` in een klein .mjs-script.
 - Windows: start programma's met `cmd /c "programma argumenten > uit.txt 2> fout.txt"` en lees daarna die bestanden. Uitpakken van een zip: `tar -xf bestand.zip -C map`.
 - Mac: gebruik zsh. Uitpakken: `unzip bestand.zip -d map`.
-- Een browser starten lukt niet in de sandbox. Probeer het niet. Test de logica met kleine Node-scripts en laat de gebruiker het scherm beoordelen.
+- Start zelf geen browser met een commando: dat blokkeert de sandbox. Heb je browsertools (namen die beginnen met `dsh_browser_`), gebruik die dan om je werk na te kijken, zie deel 4. Heb je ze niet, test dan de logica met kleine Node-scripts en laat de gebruiker het scherm beoordelen.
 - npm alleen als de opdracht het vraagt, in de map van de oefening, met `--ignore-scripts` als een installatie faalt.
 - De OpenRouter-sleutel staat in `openrouter_key.txt` op het bureaublad. Alleen de beeldtool leest hem. Kopieer, toon of log de sleutel nooit.
 - Niets publiceren, niets versturen, geen accounts aanmaken, nooit een wachtwoord typen.
@@ -37,6 +38,7 @@ Lees dit voor je begint. Deze regels gelden altijd, ook als de opdracht ze niet 
 ## 4. Afwerken
 
 - Test wat je kan testen en schrijf de echte uitkomst op, niet wat je verwacht.
+- Nakijken met browsertools, als je die hebt: open de app, klik de hoofdfuncties door zoals een gebruiker, maak een schermafbeelding, lees de console en verbeter wat niet werkt of er slecht uitziet. Hoogstens drie rondes. Opent de browser alleen webadressen, start dan een tijdelijke lokale server voor de map van de oefening en stop die als je klaar bent. De app zelf moet blijven werken door `index.html` te dubbelklikken.
 - Zoek voor je klaar meldt naar vergeten tekst zoals "TODO", "Lorem" of "voorbeeld hier".
 - Stop elk programma dat je zelf startte.
 - Schrijf een korte `LEESMIJ.md` in de map van de oefening: hoe je de app start, wat werkt, wat niet werkt of niet getest is, hoeveel beelden je maakte.
