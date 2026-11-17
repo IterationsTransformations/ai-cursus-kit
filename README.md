@@ -9,6 +9,7 @@ De oefeningen en prompts staan op [transformatrons.be](https://transformatrons.b
 | `cursuskit/` | De beeldtool (FLUX via OpenRouter) en de vaste regels voor elke oefening | `downloads/cursuskit.zip` |
 | `toms-cocktails/` | Tom's Cocktails, de app die je in oefening B2 aanpast | `downloads/toms-cocktails.zip` |
 | `folio/` | Een vastgezette kopie van Folio, de open-source pdf-lezer voor oefening B9 | `downloads/folio.zip` |
+| `modellen/` | Instellingenbestand dat de modelkiezer beperkt tot de acht Pareto-modellen (optioneel) | geen, zie `modellen/LEESMIJ.md` |
 
 ## Licenties en bronnen
 
