@@ -10,7 +10,7 @@ Hulpmiddelen voor hoofdstuk 5 (DeepSeek Harness). Deze map staat in je workspace
 
 ## Wat je nodig hebt
 
-- Je OpenRouter-sleutel in een tekstbestand `openrouter_key.txt` op je bureaublad. Alleen de sleutel, op één regel.
+- Je OpenRouter-sleutel in een tekstbestand `openrouter_key.txt` in je werkmap (de map waarin `cursuskit` staat, bijvoorbeeld `AI-cursus`). Alleen de sleutel, op één regel. Een bestand met die naam op je bureaublad werkt ook.
 - Verder niets. Je hoeft Node.js niet te installeren: staat het niet op je computer, dan gebruikt de agent de Node die in DeepSeek Harness zit.
 
 ## Node starten (voor de agent)

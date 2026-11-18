@@ -25,10 +25,14 @@ const MAX_BEELDEN = 12;
 
 /* ------------------------------------------------------------------ sleutel */
 
-/** Zoek openrouter_key.txt op het bureaublad, ook als dat onder OneDrive\Desktop ligt. */
+/** Zoek openrouter_key.txt: eerst in de werkmap, daarna op het bureaublad (ook onder OneDrive\\Desktop). */
 function findKeyFile() {
   const home = homedir();
+  const hier = dirname(fileURLToPath(import.meta.url));
   const candidates = [
+    join(process.cwd(), 'openrouter_key.txt'),
+    join(hier, '..', 'openrouter_key.txt'),
+    join(hier, 'openrouter_key.txt'),
     join(home, 'Desktop', 'openrouter_key.txt'),
     join(home, 'OneDrive', 'Desktop', 'openrouter_key.txt'),
     process.env.OneDrive ? join(process.env.OneDrive, 'Desktop', 'openrouter_key.txt') : null,
@@ -37,7 +41,7 @@ function findKeyFile() {
       : null,
   ].filter(Boolean);
   for (const c of candidates) if (existsSync(c)) return c;
-  throw new Error('openrouter_key.txt niet gevonden op het bureaublad.');
+  throw new Error('openrouter_key.txt niet gevonden. Zet het bestand in je werkmap (de map waarin cursuskit staat) of op je bureaublad.');
 }
 
 function readKey() {

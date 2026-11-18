@@ -7,9 +7,9 @@ De oefeningen en prompts staan op [transformatrons.be](https://transformatrons.b
 | Map | Wat het is | Zip voor de agent |
 |---|---|---|
 | `cursuskit/` | De beeldtool (FLUX via OpenRouter) en de vaste regels voor elke oefening | `downloads/cursuskit.zip` |
-| `toms-cocktails/` | Tom's Cocktails, de app die je in oefening B2 aanpast | `downloads/toms-cocktails.zip` |
-| `folio/` | Een vastgezette kopie van Folio, de open-source pdf-lezer voor oefening B9 | `downloads/folio.zip` |
-| `modellen/` | Instellingenbestand dat de modelkiezer beperkt tot de acht Pareto-modellen (optioneel) | geen, zie `modellen/LEESMIJ.md` |
+| `toms-cocktails/` | Tom's Cocktails, de app die je in oefening C3 aanpast | `downloads/toms-cocktails.zip` |
+| `folio/` | Een vastgezette kopie van Folio, de open-source pdf-lezer voor oefening B11 | `downloads/folio.zip` |
+| `modellen/` | Instellingenbestand dat de modelkiezer beperkt tot de acht Pareto-modellen (optioneel, oefening D1) | geen, zie `modellen/LEESMIJ.md` |
 
 ## Licenties en bronnen
 
@@ -19,4 +19,4 @@ De oefeningen en prompts staan op [transformatrons.be](https://transformatrons.b
 
 ## Veiligheid
 
-In deze repository staat geen enkele sleutel. Je OpenRouter-sleutel bewaar je zelf, in `openrouter_key.txt` op je bureaublad. Deel hem met niemand.
+In deze repository staat geen enkele sleutel. Je OpenRouter-sleutel bewaar je zelf, in `openrouter_key.txt` in je werkmap `AI-cursus` (een bestand met die naam op je bureaublad werkt ook). Deel hem met niemand en stuur nooit je hele werkmap door.
