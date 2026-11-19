@@ -38,7 +38,7 @@ Ik heb zelf een paar keer geklikt. Kijk in je browser, zonder de pagina te herla
 
 ### B1 · Fruit Ninja
 
-Doe deze prompt eerst met GPT-6.1 Terra. Start daarna een nieuwe sessie met DeepSeek V4.1 Flash en verander in de laatste alinea de map naar `oefeningen/fruitninja-deepseek`.
+De spelopdracht is in het Engels: het is de testprompt die OpenRouter gebruikt om modellen te vergelijken, zodat je jouw resultaat naast dat van OpenRouter kan leggen. De laatste alinea is de Nederlandse slotzin. Doe deze prompt eerst met GPT-6.1 Terra. Start daarna een nieuwe sessie met DeepSeek V4.1 Flash en verander in de laatste alinea de map naar `oefeningen/fruitninja-deepseek`.
 
 ```text
 Build a Fruit Ninja style slicing game. Fruit of at least four shapes and colors, are tossed up from below in arcs and fall back out of view. Hold the left mouse button and drag to slice; the slice is the cursor's path between frames, so a fast swipe must cut every fruit it crosses. Sliced fruit splits into two halves that fly apart with spin plus a burst of juice particles. Bombs are tossed among the fruit, and slicing one ends the game, as does letting three fruit fall unsliced. One point per fruit, with a combo bonus for three or more in one swipe. Draw a blade trail while dragging. Show score, misses and a game over screen.
