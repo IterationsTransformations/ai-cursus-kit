@@ -363,6 +363,8 @@ Werk in de map oefeningen/rubik. Volg de regels in cursuskit/REGELS.md. Zeg op h
 
 Je hebt een gratis Unity-account nodig. Zet de toegang voor deze sessie op Full access, alleen op een computer waar je over de gevolgen hebt nagedacht: de agent installeert Unity als het er nog niet staat.
 
+Aanbeveling: bouw spellen met veel 3D op dit moment met Claude Fable 5.2, of ten minste met Claude Opus 5.5. Die zijn duurder dan GPT-6.1 Terra: kijk vooraf je tegoed na.
+
 ```text
 Ik wil een spel bouwen in de stijl van Fall Guys met de game-engine Unity. Help me stap voor stap en doe zelf wat je kan.
 
@@ -447,17 +449,31 @@ Maak "Zeg het maar" mooier met beelden van FLUX. Lees eerst cursuskit/LEESMIJ.md
 
 ## Uitbreiding · AI op je eigen computer
 
-**FLUX lokaal installeren**
+ComfyUI is het gratis, open-source programma dat een beeldmodel op je eigen computer laat draaien. Zelf installeren en instellen is redelijk complex; laat DeepSeek Harness het doen. Een goed vertrekpunt is FLUX.1 schnell (licentie Apache 2.0).
+
+**ComfyUI en het beste beeldmodel installeren**
 
 ```text
-Ik wil op deze computer zelf beelden maken met FLUX, zonder internetdienst.
-Kijk eerst na of mijn computer daarvoor geschikt is: welke grafische kaart of chip, hoeveel geheugen en hoeveel vrije schijfruimte. Zeg me eerlijk of het zin heeft, welk FLUX-model op mijn computer past en hoe lang een beeld ongeveer zal duren. Zeg ook hoeveel je moet downloaden en onder welke licentie het model valt. Wacht daarna op mijn akkoord.
-Na mijn akkoord: installeer ComfyUI en dat model in de map lokale-flux in deze werkmap, zonder iets buiten de werkmap te veranderen. Maak een proefbeeld van een rode appel in cartoonstijl en toon het. Maak een startbestand voor Windows en voor Mac en een kort LEESMIJ waarin staat hoe ik later zelf een beeld vraag.
+Ik wil op deze computer zelf beelden maken met ComfyUI, zonder internetdienst.
+Onderzoek eerst mijn computer: welke grafische kaart of chip, hoeveel videogeheugen en werkgeheugen, en hoeveel vrije schijfruimte. Zoek daarna op welk open beeldmodel voor deze computer het beste is, bijvoorbeeld FLUX.1 schnell of een kleinere versie ervan. Zeg me eerlijk of het zin heeft, welk model en welke versie je kiest en waarom, hoe lang een beeld ongeveer zal duren, hoeveel je moet downloaden en onder welke licentie het model valt. Wacht daarna op mijn akkoord.
+Na mijn akkoord: installeer ComfyUI en dat model in de map lokale-beelden in deze werkmap, zonder iets buiten de werkmap te veranderen. Stel ComfyUI zo in dat het goed werkt op deze computer. Maak een proefbeeld van een rode appel in cartoonstijl en toon het. Maak een startbestand voor Windows en voor Mac en een kort LEESMIJ waarin staat hoe ik later zelf een beeld vraag.
 Vraag geen extra rechten. Lukt iets niet binnen de werkmap, leg dan in gewone woorden uit wat ik zelf moet doen.
 ```
 
 **Daarna beelden vragen**
 
 ```text
-Maak met de lokale FLUX in de map lokale-flux vier beelden voor mijn spel in oefeningen/fruitninja: een watermeloen, een sinaasappel, een ananas en een bom, in dezelfde cartoonstijl. Zet ze in de map img van het spel en gebruik ze in het spel. Gebruik niet de cursuskit en geen internetdienst.
+Maak met ComfyUI in de map lokale-beelden vier beelden voor mijn spel in oefeningen/fruitninja: een watermeloen, een sinaasappel, een ananas en een bom, in dezelfde cartoonstijl. Kies zelf de instellingen die op deze computer het beste resultaat geven. Zet de beelden in de map img van het spel en gebruik ze in het spel. Gebruik niet de cursuskit en geen internetdienst.
+```
+
+**ComfyUI laten optimaliseren**
+
+```text
+Open ComfyUI in de map lokale-beelden en kijk hoe de werkstroom voor beelden is ingesteld. Zoek de instellingen die op deze computer het beste beeld geven in een redelijke tijd: het aantal stappen, de beeldgrootte, de sampler en de juiste versie van het model. Maak met elke instelling die je probeert hetzelfde proefbeeld, toon de beelden naast elkaar met de tijd die elk beeld duurde, en bewaar de beste instelling als vaste werkstroom. Leg in het LEESMIJ in gewone woorden uit wat elke instelling doet. Vraag geen extra rechten.
+```
+
+**Een eigen beeldstudio bovenop ComfyUI**
+
+```text
+Bouw in de map oefeningen/mijn-beeldstudio een eenvoudige webapp die beelden maakt met ComfyUI uit de map lokale-beelden. ComfyUI draait op deze computer en heeft een eigen API op http://127.0.0.1:8188. De app heeft één tekstvak voor de beschrijving, een keuze voor het formaat (vierkant, liggend of staand), een keuze uit vijf stijlen en een knop Maak beeld. Het resultaat verschijnt groot, met een knop om het te bewaren, en eronder staat een galerij van de vorige beelden. Gebruik de beste instelling uit het LEESMIJ als standaard en verberg de technische instellingen achter een knop Geavanceerd. Alle tekst in het Nederlands. Maak een startbestand dat ComfyUI start als het nog niet draait en daarna de app opent. Test de app in je browser met drie beelden en verbeter wat niet klopt, hoogstens drie rondes. Stop elk programma dat je zelf startte. Vraag geen extra rechten.
 ```
