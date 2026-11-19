@@ -2,7 +2,7 @@
 
 De Complete AI Opleiding: van A tot I · Je eigen AI-coder met DeepSeek Harness
 
-Dit zijn alle prompts van de oefeningen van hoofdstuk 5, in de versie waarmee ze op 18 en 19 november 2026 in DeepSeek Harness zijn uitgevoerd, met de aanpassingen na die test. Doe de oefeningen na elkaar, elk in een nieuwe sessie in de workspace AI-cursus, met GPT-6.1 Terra op Effort High en de toegang op Workspace Write (behalve D11).
+Dit zijn alle prompts van de oefeningen van hoofdstuk 5, in de versie waarmee ze op 18 en 19 november 2026 in DeepSeek Harness zijn uitgevoerd, met de aanpassingen na die test. Doe de oefeningen na elkaar, elk in een nieuwe sessie in de workspace AI-cursus, met GPT-6.1 Terra op Effort High en de toegang op Workspace Write (behalve bij D11).
 
 Prompts die naar de cursuskit verwijzen (`cursuskit/REGELS.md`, `cursuskit/beelden.mjs`) hebben de map `cursuskit` uit deze repository nodig in je werkmap, en `openrouter_key.txt` in je werkmap.
 
@@ -361,20 +361,22 @@ Werk in de map oefeningen/rubik. Volg de regels in cursuskit/REGELS.md. Zeg op h
 
 ### D11 · Fall Guys-kloon in Unity
 
-Unity moet al op je computer staan, met een Unity-account en de gratis Personal-licentie. Zet de toegang voor deze sessie op Full access, alleen op een computer waar je over de gevolgen hebt nagedacht.
+Je hebt een gratis Unity-account nodig. Zet de toegang voor deze sessie op Full access, alleen op een computer waar je over de gevolgen hebt nagedacht: de agent installeert Unity als het er nog niet staat.
 
 ```text
-Ik wil een spel bouwen in de stijl van Fall Guys met de game-engine Unity. Unity staat al op deze computer. Kijk welke versie van de Unity-editor geïnstalleerd is en gebruik die.
+Ik wil een spel bouwen in de stijl van Fall Guys met de game-engine Unity. Help me stap voor stap en doe zelf wat je kan.
+
+Installeren. Kijk eerst of Unity Hub en een Unity-editor al op deze computer staan. Zo niet: installeer Unity Hub en daarna de nieuwste Unity 6 LTS-editor met de bouwmodule voor dit besturingssysteem (Windows of Mac). Leg bij elke stap in gewone woorden uit wat je doet. Stop en vraag het mij telkens als iets alleen ik kan doen: aanmelden met mijn Unity-account, de gratis Personal-licentie aanvaarden, een wachtwoord typen of een installatie goedkeuren. Typ zelf nooit een wachtwoord.
 
 Het spel. Maak een Unity-project met één level: een hindernisbaan in vrolijke kleuren met draaiende balken, bewegende platformen, slingerende hamers en een finish. De speler is een rond, wiebelig figuurtje dat rent, springt en duikt, met een camera die volgt. Tien computerspelers lopen mee. Wie valt, begint opnieuw bij het laatste controlepunt. Toon de plaats van de speler tijdens de race, een startscherm met de bediening en een eindscherm. Alle tekst in het Nederlands.
 
 Beelden. Maak met FLUX alle beelden die nodig zijn om er een prachtig spel van te maken: de baan en de platformen, de obstakels, de lucht, de patronen op de figuurtjes en het startscherm, allemaal in één stijl. Gebruik daarvoor de beeldtool cursuskit/beelden.mjs en gebruik de beelden ook echt in het spel.
 
-Bouwen. Dit is geen webapp: maak geen index.html en geen versie voor de browser. Kies zelf een geschikte map voor het Unity-project en zeg me waar het staat. Bouw het project vanaf de opdrachtregel, zonder het venster van Unity te openen. Lees het bouwlogboek en los fouten op tot de bouw slaagt.
+Bouwen. Bouw het project vanaf de opdrachtregel, zonder het venster van Unity te openen. Lees het bouwlogboek en los fouten op tot de bouw slaagt.
 
 Testen. Start het gebouwde spel, maak een schermafbeelding van het startscherm en van een lopende race, en verbeter wat niet klopt, hoogstens drie rondes.
 
-Zeg op het einde welk bestand ik moet starten, hoe ik speel en hoe ik het project later in Unity open.
+Zeg op het einde waar het project staat, welk bestand ik moet starten, hoe ik speel en hoe ik het project later in Unity open.
 ```
 
 ## Deel E · Gevorderd: bouwen naar een voorbeeld
