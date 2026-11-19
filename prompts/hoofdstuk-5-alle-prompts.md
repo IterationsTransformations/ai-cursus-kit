@@ -361,7 +361,7 @@ Werk in de map oefeningen/rubik. Volg de regels in cursuskit/REGELS.md. Zeg op h
 
 ### D11 · Fall Guys-kloon in Unity
 
-Je hebt een gratis Unity-account nodig. Zet de toegang voor deze sessie op Full access, alleen op een computer waar je over de gevolgen hebt nagedacht: de agent installeert Unity als het er nog niet staat.
+Je hebt een gratis Unity-account nodig. Staan Blender of ComfyUI met een FLUX-model op je computer, dan gebruikt de agent die ook. Zet de toegang voor deze sessie op Full access, alleen op een computer waar je over de gevolgen hebt nagedacht: de agent installeert Unity als het er nog niet staat.
 
 Aanbeveling: bouw spellen met veel 3D op dit moment met Claude Fable 5.2, of ten minste met Claude Opus 5.5. Die zijn duurder dan GPT-6.1 Terra: kijk vooraf je tegoed na.
 
@@ -372,7 +372,7 @@ Installeren. Kijk eerst of Unity Hub en een Unity-editor al op deze computer sta
 
 Het spel. Maak een Unity-project met één level: een hindernisbaan in vrolijke kleuren met draaiende balken, bewegende platformen, slingerende hamers en een finish. De speler is een rond, wiebelig figuurtje dat rent, springt en duikt, met een camera die volgt. Tien computerspelers lopen mee. Wie valt, begint opnieuw bij het laatste controlepunt. Toon de plaats van de speler tijdens de race, een startscherm met de bediening en een eindscherm. Alle tekst in het Nederlands.
 
-Beelden. Maak met FLUX alle beelden die nodig zijn om er een prachtig spel van te maken: de baan en de platformen, de obstakels, de lucht, de patronen op de figuurtjes en het startscherm, allemaal in één stijl. Gebruik daarvoor de beeldtool cursuskit/beelden.mjs en gebruik de beelden ook echt in het spel.
+Beelden en 3D-vormen. Maak alle beelden die nodig zijn om er een prachtig spel van te maken: de baan en de platformen, de obstakels, de lucht, de patronen op de figuurtjes en het startscherm, allemaal in één stijl, en gebruik ze ook echt in het spel. Staat ComfyUI met een FLUX-model op deze computer, gebruik dat dan. Anders gebruik je de beeldtool cursuskit/beelden.mjs. Staat Blender op deze computer, gebruik het dan voor 3D-vormen die moeilijk in code te maken zijn, zoals wolken, een finishboog en de figuurtjes.
 
 Bouwen. Bouw het project vanaf de opdrachtregel, zonder het venster van Unity te openen. Lees het bouwlogboek en los fouten op tot de bouw slaagt.
 
