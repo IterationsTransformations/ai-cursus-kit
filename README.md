@@ -10,6 +10,7 @@ De oefeningen en prompts staan op [transformatrons.be](https://transformatrons.b
 | `toms-cocktails/` | Tom's Cocktails, de app die je in oefening C3 aanpast | `downloads/toms-cocktails.zip` |
 | `folio/` | Een vastgezette kopie van Folio, de open-source pdf-lezer voor oefening B11 | `downloads/folio.zip` |
 | `modellen/` | Instellingenbestand dat de modelkiezer beperkt tot de acht Pareto-modellen (optioneel, oefening D1) | geen, zie `modellen/LEESMIJ.md` |
+| `prompts/` | Alle prompts van hoofdstuk 5 in één bestand, in de geteste versie: `prompts/hoofdstuk-5-alle-prompts.md` | geen |
 
 ## Licenties en bronnen
 
